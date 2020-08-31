@@ -1,53 +1,154 @@
-body {
-    width: 1920px;
-    background-color: #000000;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+html{
+	font-size: 10px;
+	font-family: quicksand;
+	color: #ececec;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(Quicksand/Quicksand-VariableFont_wght.ttf)
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	background-size: cover;
+}
+
+section{
+	padding: 6rem 0;
+}
+
+a{
+	text-decoration: none;
+	color: #ececec
+}
+
+p{
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+
+
+.container{
+	width: 90%;
+	max-width: 120rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.section-heading{
+	text-align: center;
+	margin-bottom: 10rem;
+}
+
+.section-heading h1{
+	font-size: 3.5rem;
+	color: #ec1f88;
+	text-transform: uppercase;
+	font-weight: 300;
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after{
+	content:'';
+	position: absolute;
+	bottom: -.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1::before{
+	width: 10rem;
+	height: 3px;
+	border-radius: .8rem;
+}
+
+.section-heading h1::after{
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+	bottom: -1rem;
+}
+
+.section-heading h6{
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.has-margin-right{
+	margin-right: 5rem;
+}
+
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     color: #FFFFFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: Quicksand;
+	font-size: 2rem;
+}
 
-}
-.logo {
-    background-image: url(../images/logohotpink.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.aboutgrid {
-    display: grid;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-columns: 1fr 1fr;
-    height: 450px;
-    grid-template-areas: 
-    "picture info lead";
-    color: #FFFFFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-}
-.picture {
-    grid-area: picture;
-    background-image: url(../images/profilepicture.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 5px solid #ec1f88;
-    border-radius: 4px;
-    padding: 5px;
-    width: 700px;
-}
-.picture {
-    display: block;
-    margin-left: auto;
-    width: 30.75%;
-}
-.info {
-    grid-area: info;
-    text-align: center;
 
+.nav-link{
+	font-family: Quicksand;
+	src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
+	font-size: 15rem;
+	padding: 1rem;
 }
+
+.profile-img{
+	width: 50px;
+	height: auto;
+}
+
+.about .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-heading{
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 0;
+	margin-bottom: 6rem;
+}
+
+.about-heading h1{
+	font-size: 10rem;
+	opacity: .3;
+}
+
+.about-heading h6{
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.profile-img{
+	flex: 1;
+	margin-right: rem;
+}
+
+.about-details{
+	flex: 1;
+}
+
+
 .lead {
   grid-area: lead;  
   background-color: #000000;
@@ -79,9 +180,14 @@ nav {
 	-ms-transform: translateY(-2.1rem);
 	transform: translateY(-2.1rem);
 }
+img {
+	max-width: 40%;
+	height: auto;
+}
 .intro-content h1 {
 	color: #ececec;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Quicksand;
+	src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
     font-weight: normal;
 	font-size: 6.4rem;
 	line-height: 1.071;
@@ -94,7 +200,8 @@ nav {
 }
 .intro-content h5 {
 	color: #ec1f88;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: Quicksand;
+	src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
 	font-size: 1.6rem;
 	line-height: 1.565;
 	margin-bottom: 0;
@@ -103,7 +210,8 @@ nav {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: Quicksand;
+	src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
 	font-size: 1.6rem;
     line-height: 1.565;
     margin-bottom: 0;
@@ -120,14 +228,14 @@ nav {
 	text-align: center;
 	display: inline-block;
 	padding: 0 8px 0 14px;
-	color: rgba(255, 255, 255, 0.3);
+	color: #ec1f88;
 }
 .intro-content .intro-position span:first-child::before {
 	content: "|";
 	text-align: center;
 	display: inline-block;
 	padding: 0 14px 0 8px;
-	color: rgba(255, 255, 255, 0.3);
+	color: #ec1f88;
 }
 .intro-content .button {
 	color: #ececec !important;
@@ -141,8 +249,216 @@ nav {
     letter-spacing: .25rem;
 }
 
+.my-skills{
+	margin-top: 10rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap: 2.5rem;
+	text-align: center;
+}
 
+.skill{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
 
+.skill h1{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 2rem -2px 2rem 0;
+}
 
+.icon-container{
+	width: 3rem;
+	height: 3rem;
+	border: 3px solid #ec1f88;
+	background-color: #ececec;
+	margin-bottom: 2rem;
+	display: flex;
+	transform: rotate(45deg);
+}
 
+.icon-container i{
+	color: #ffe838;
+	font-size: 5rem;
+	margin: auto;
+	transform: rotate(-45);
+}
 
+.portfolio-item{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 3rem;
+}
+
+.portfolio-item:last-child{
+	margin-bottom: 0;
+}
+
+.portfolio-image{
+	flex: 5;
+	size: 30px;
+}
+
+.portfolio-description{
+	flex: 2;
+}
+
+.portfolio-description h1{
+	font-size: 3rem;
+	font-weight: 300;
+	margin: 1rem 0;
+}
+
+.portfolio-description h6{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	opacity: 0.3;
+}
+
+.portfolio-description .cta{
+	display: inline-block;
+	margin-top: 2.5rem;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: #ec1f88;
+	transition: color 650ms;
+}
+
+.portfolio-description .cta:hover{
+	color: #ffe838;
+}
+
+.contact{
+	background-color: #000000;
+}
+
+form{
+	width: 70%;
+	margin: 0 auto;
+}
+
+form label{
+	font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 5px;
+	border: none;
+	outline-color: #ec1f88;
+}
+
+input[type="submit"]{
+	width: initial;
+	background-color: #ec1f88;
+	color: #ececec;
+	padding: 1rem 2rem;
+	border-radius: .8rem;
+	cursor: pointer;
+	transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+	color: #000000;
+	background-color: #ffe838;
+}
+
+.copyright{
+	width: 100%;
+	text-align: center;
+	background-color: #ec1f88;
+	padding: 2rem 0;
+	position: relative;
+}
+
+.up{
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	background-color: #ececec;
+	top: -2.5rem;
+	right: 5rem;
+	border-radius: 100%;
+	display: flex;
+	animation: pulse 2s infinite;
+	cursor: pointer;
+}
+
+.up i{
+	color: #ec1f88;
+	font-size: 2rem;
+	margin: auto;
+}
+
+.copyright p{
+	font-size: 1.4rem;
+}
+
+@keyframes pulse {
+	0%{
+		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+	}
+	70%{
+		box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+	}
+	100%{
+		box-shadow: rgba(253, 87, 191, 0);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-heading h1{
+		font-size: 8rem;
+	}
+	.section-heading h1{
+		font-size: 3rem;
+	}
+	.about-details .nav-list{
+		flex-direction: initial;
+	}
+	.about-details li{
+		margin: 0 2rem;
+	}
+	.icon-container{
+		width: 7rem;
+		height: 7rem;
+	}
+	.icon-container i{
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about.container{
+		flex-direction: column;
+	} 
+	.profile-img{
+		margin: 0 0 7rem 0;
+	}
+	.portfolio-item{
+		flex-direction: column;
+	}
+	.portfolio-img{
+		margin: 0 0 2rem 0;
+		order: 1;
+	}
+	.portfolio-description{
+		margin: 0;
+		order: 2;
+	}
+	form{
+		width: 100%;
+	}
+	.up{
+		right: 2rem;
+	}
+}

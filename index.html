@@ -3,13 +3,14 @@
     <head>
         <title>Kathryn Taylor's Professonal Portfolio</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        
         <style>
           @font-face {
-            font-family: quicksand;
-            src: url(quicksand.ttf);
+            font-family: Quicksand;
+            src: url(Quicksand/Quicksand-VariableFont_wght.ttf)
           }
           body {
-            font-family: quicksand;
+            font-family: Quicksand;
           }
         </style>
     </head>
@@ -17,23 +18,26 @@
 
     </body>
     <header>
-        
-  <nav>
-                     <div class="work">Work</div>
-                     <div class="resume">Resume</div>
-                     <div class="logo"><img src="images/logohotpink.png" height=50px></div>
-                     <div class="about">About</div>
+     
+    <nav>
+                     <div class="work">About</div>
+                     <div class="resume">Skills</div>
+                     <div class="about">Portfolio</div>
                      <div class="contact">Contact</div>
   </nav>
       </header> 
     <section id="intro">
+      
+     
 
         <div class="intro-overlay"></div>
  
         <div class="intro-content">
             <div class="row">
+              <img src="images/logohotpink.png">
  
                 <div class="col-twelve">
+                 
  
                     <h5>Hello, & Welcome</h5>
                     <h1>I am Kathryn Taylor.</h1>
@@ -48,19 +52,153 @@
         </div> 
  
     </section> 
-<section id="about">
-  <div class="aboutgrid">
-       <div class="picture"></div>
-    <div class="info">
-      <p class="lead">I am a UX/UI Designer based out of Orange County, CA. I absolutly love getting into the minds of The User & creating a masterpiece based on the research I conduct. I have a team player mentality always bringing a positive & inspiring approach to team projects. My military experience has taught me to never quit & stay motivated & dedicated to every challenge I come across. Please check out my resume for my experience in The US Navy, Hotel Management, Bar Management, Music Industry & Floral Design.</p>
+<section class="about" id="about">
+  <div class="container">
+    <div class="profile-img">
+      <img src="images/profilepicture.jpeg" alt="">
+    </div>
+    <div class="about-details">
+      <div class="about-heading">
+        <h1>About</h1>
+        <h6>Myself</h6>
+      </div>
+      <p>
+        I am a UX/UI Designer based out of Orange County, CA. I absolutly love getting into the minds of The User & creating a masterpiece based on the research I conduct. I have a team player mentality always bringing a positive & inspiring approach to team projects. My military experience has taught me to never quit & stay motivated & dedicated to every challenge I come across. Please check out my resume for my experience in The US Navy, Hotel Management, Bar Management, Music Industry & Floral Design.
+      </p>
+    </div>
+</section>
+  
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <h1>Services</h1>
+      <h6>What can I help you with?</h6>
+    </div>
+    <div class="my-skills">
+      <div class="skill">
+        <div class="icon-container">
+          <i class="fas fa-layer-group"></i>
+        </div>
+        <h1>User Research</h1>
+        <p>
+          I will find out exactly who your user is through user 
+          research & then develope the web design. 
+        </p>
+      </div>
+      <div class="skill">
+        <div class="icon-container">
+          <i class="fas fa-code-code"></i>
+        </div>
+        <h1>Visual Communication</h1>
+        <p>
+          I am proficient in visual communication & understand 
+          the concepts of layout, color, typography, design theory
+          & lots more.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="icon-container">
+          <i class="fas fa-chart-chart-bar"></i>
+        </div>
+        <h1>Web Design</h1>
+        <p>
+          I have helped with & created many web designs that 
+          clients would and do absolutly love. 
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-heading">
+      <h1>Portfolio</h1>
+      <h6>Take a look at my most recent creations</h6>
     </div>
 
-  </div> 
-</section>
+    <div class="portfolio-item">
+      <div class="portfolio-image">
+        <img src="images/freedomfund.png" alt="">
+      </div>
+      <div class="portfolio-description">
+        <h6>Web Design</h6>
+        <h1>Non Profit Website</h1>
+        <p>
+          I helped create The Minnesota Freedom Fund's Non Profit 
+          Wesite with a fabulous team & by doing so the non profit 
+          reached out to us with interest in buying the actual design.
+        </p>
+        <a href="#" class="cta">View Details</a>
+     </div>
+  </div>
+
+    <div class="portfolio-item">
+      <div class="portfolio-img">
+        <img src="images/gov.png" alt="">
+      </div>
+        <div class="portfolio-description">
+          <h6>Web Redesign</h6>
+          <h1>Government Website</h1>
+          <p>
+            I redisgned The US Department of the Tresury website for 
+            it needed a more organized & simplistic design for their users.
+          </p>
+          <a href="#" class="cta">View Details</a>
+        </div>
+          
+    </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="images/easygrabs.png" alt="">
+          </div>
+          <div class="portfolio-description">
+            <h6>Mobile App</h6>
+            <h1>Easy Grabs</h1>
+            <p>
+              This was a creative project that I worked on with an 
+              amazing team. We came up with an idea of od the fact many people need 
+              jobs due to Covid19 &  & other other personal circumstances. 
         
- <footer>
- 
-</footer>
+            </p>
+            <a href="#" class="cta">View Details</a>
+          </div>
+    </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <h1>Contact</h1>
+      <h6>Please feel free to reach out to me</h6>
+    </div>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+      <label for="service">Services:</label>
+      <select name="services" id="service">
+        <option value="">User Research</option>
+        <option value="">Web Design</option>
+        <option value="">User Research/Web Design</option>
+      </select>
+      <label for="subject">Subject:</label>
+      <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+      <input type="submit" value="submit">
+    </form>
+</section>
+
+ <footer class="copyright">
+   <div class="up" id="up">
+     <i class="fas fa-chevron-up"></i>
+   </div>
+     <p>&copy; 2020 Kathryn Taylor</p>
+  </footer>
  
 </html>
 
